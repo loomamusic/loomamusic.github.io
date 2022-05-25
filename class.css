@@ -1,0 +1,20 @@
+.imageContainer {
+	width:2484;
+	height:544;
+	background-image: url("img/name.png")
+}
+h1 {
+  text-shadow: 2px 2px 5px red;
+}
+
+html, body {
+
+
+
+margin:0;
+
+padding:0;
+
+
+
+}
