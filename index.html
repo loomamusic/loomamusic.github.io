@@ -22,6 +22,56 @@
 		</center>
 
 	</header>
+	
+	
+<body>
+			<div class="wrapper" style="font-family: Courier, monospace; font-size: 200%; position:fixed;  left: 5%;">
+				
+				<a>USERNAME == LOOMA</a><br>
+				<a>PASSWORD == ********</a><br>
+				<a>SEARCHING FOR NEW RELEASES</a><br>
+				<a>.</a><br>
+				<a>.</a><br>
+				<a>.</a><br>
+				<a>DISPLAYING RESULTS:</a><br>
+
+
+ 			</div>
+	
+			<script>
+console.clear();
+var time = 1000;
+function typingEffect(element,speed,wait){
+  let text=element.innerHTML;
+  element.innerHTML="";
+ setTimeout(function(){
+ var i=0;
+  var timer=setInterval(function(){
+    if(i<text.length){
+      element.append(text.charAt(i))
+      i++;
+    }else{
+      clearInterval(timer);
+    }
+  },speed)
+  },wait);
+  time += 500;
+  typingEffect(element.nextElementSibling,50,time)
+}
+
+
+
+let string=document.querySelector('a');
+typingEffect(string,50,1000);
+
+
+
+
+			</script>
+</body>
+	
+	
+	
 	</head>
 		<link rel="icon" href="img/favicon.ico" />
 		<body style background="img/Background.jpg">

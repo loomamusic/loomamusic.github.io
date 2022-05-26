@@ -18,3 +18,36 @@ padding:0;
 
 
 }
+/* GLOBAL STYLES */
+body {
+  background: #333;
+  padding-top: 5em;
+}
+.wrapper{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  font-family: Courier, monospace; 
+  font-size: 200%; 
+  position:relative;  
+  left: 5%;
+}
+
+/* DEMO-SPECIFIC STYLES */
+ h1 {
+  color: palevioletred;
+  font-family: monospace;
+  white-space: nowrap; 
+  margin: 0 auto; 
+  padding-right:00px;
+  letter-spacing: .15em;
+  animation: blink .5s step-end           infinite alternate;;
+}
+
+
+
+/* The typewriter cursor effect */
+@keyframes blink {
+  50% { border-color: transparent}
+}
