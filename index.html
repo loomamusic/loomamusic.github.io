@@ -40,7 +40,7 @@
 	
 			<script>
 console.clear();
-var time = 1000;
+var time = 500;
 function typingEffect(element,speed,wait){
   let text=element.innerHTML;
   element.innerHTML="";
@@ -55,16 +55,16 @@ function typingEffect(element,speed,wait){
     }
   },speed)
   },wait);
-  time += 500;
-  typingEffect(element.nextElementSibling,50,time)
+  time += 250;
+  typingEffect(element.nextElementSibling,20,time)
 }
 
 
 
 let string=document.querySelector('a');
-typingEffect(string,50,1000);
+typingEffect(string,20,500);
 </script>
-	<div id="iframe" style="position: relative; padding: 200px 0 0 0px;" width="40%" height="300px">
+	<div id="iframe" style="position: relative; padding: 200px 0 0 0px;" width="40%">
 		<center>
 			<iframe style="position: relative; border-radius:12px" src="https://open.spotify.com/embed/album/2AWx1iJj9TYEyKpeqmQpxO?utm_source=generator&theme=0" width="auto" height="auto" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
 			
@@ -75,16 +75,16 @@ typingEffect(string,50,1000);
 	<script>
 			let iframeElement = document.getElementById('iframe');
 			var opacity = 0;
-			var speed = 100;
+			var speed = 10;
 			iframeElement.style.opacity = opacity;
 			setTimeout(function(){
 				if(opacity <= 1) {
 					setInterval(function(){
-						opacity+= .1;
+						opacity+= .01;
 						iframeElement.style.opacity = opacity;
 					},speed);
 				}
-			},5000);
+			},2500);
 			
 	
 	</script>
