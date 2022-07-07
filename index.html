@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<meta name= "viewport" content = "width=device-width, initial-scale=1">
-<title>Looma</title>
+	<meta charset="utf-8">
+	<meta name= "viewport" content = "width=device-width, initial-scale=1">
 	<style>
 		html, body {
 			margin:0;
@@ -11,139 +10,109 @@
 	
 		}
 	</style>
-	
-			
-	<header>
 
-	<div>
-		<font face="Arial" style="opacity: 80%; color: darkslategrey; text-decoration: none; font-size:20px; color: #2F2F2F;">
-			<a href="socials.html" style="position: absolute; left: 50px; top: 10px; text-decoration: none; color: #1D1D1D">
-				<b>SOCIALS</b>
-			</a>
-			<a href="gear.html" style="position: absolute; right: 50px; top: 10px; text-decoration: none; color: #1D1D1D"> 
-				<b>GEAR</b>
-			</a>
-		</font>
-		<center>
-			<div style="padding: 50px 0 0 0px;margin-left: auto;margin-right: auto;">
-				<img class ="img-name" src="img/LoomaNoOutline.png" alt="name" width="80%">
-			</div>
-		</center>
+	<link rel="stylesheet" href="style.css">
+	<script src="home.js" defer></script>
 	
-	</div>
-	</header>
-	
+</head>		
 	
 <body>
-			<div class="wrapper" style="color: #000000; font-weight: 0; font-family: Courier, monospace; font-size: 100%; position:absolute;  left: 10%; top: auto">
-				
-				<o>USERNAME == LOOMA</o><br>
-				<o>PASSWORD == ********</o><br>
-				<o>SEARCHING FOR NEW RELEASES</o><br>
-				<o>DISPLAYING RESULTS:</o><br>
-				<o>.</o><br>
-				<o>.</o><br>
-				<o>.</o><br>
-
-
- 			</div>
+	<title>Looma</title>		
+	<header>
+		<div>
+			<font face="Arial" style="opacity: 80%; color: darkslategrey; text-decoration: none; font-size:20px; color: #2F2F2F;">
+				<a href="socials.html" style="position: absolute; left: 50px; top: 10px; text-decoration: none; color: #1D1D1D">
+					<b>SOCIALS</b>
+				</a>
+				<a href="gear.html" style="position: absolute; right: 50px; top: 10px; text-decoration: none; color: #1D1D1D"> 
+					<b>GEAR</b>
+				</a>
+			</font>
+			<center>
+				<div style="padding: 50px 0 0 0px;margin-left: auto;margin-right: auto;">
+					<img class ="img-name" src="img/LoomaNoOutline.png" alt="name" width="80%">
+				</div>
+			</center>
+		
+		</div>
+	</header>
 	
-			<script>
-console.clear();
-var time = 500;
-function typingEffect(element,speed,wait){
-  let text=element.innerHTML;
-  element.innerHTML="";
- setTimeout(function(){
- var i=0;
-  var timer=setInterval(function(){
-    if(i<text.length){
-      element.append(text.charAt(i))
-      i++;
-    }else{
-      clearInterval(timer);
-    }
-  },speed)
-  },wait);
-  time += 250;
-  typingEffect(element.nextElementSibling,20,time)
-}
+
+	<div class="wrapper" style="color: #000000; font-weight: 0; font-family: Courier, monospace; font-size: 100%; position:absolute;  left: 10%; top: auto">
+		
+		<div class="text-lines">
+			<o>USERNAME == LOOMA</o><br>
+			<o>PASSWORD == ********</o><br>
+			<o>SEARCHING FOR NEW RELEASES</o><br>
+			<o>DISPLAYING RESULTS:</o><br>
+			<o>.</o><br>
+			<o>.</o><br>
+			<o>.</o><br>
+		</div>
 
 
 
-let string=document.querySelector('o');
-typingEffect(string,20,500);
-</script>
+	</div>
+	
+
 	<div id="iframe" style="position: absolute; padding: 180px 0 0 0px; left: 13%;" width="auto" height="auto" >
 			<iframe style="position: relative; border-radius:12px" src="https://open.spotify.com/embed/album/7FX6yWwEt5iEMUzfrBABOu?utm_source=generator" width="auto" height="auto" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
 			
 			<iframe style="position: relative; border-radius:12px" src="https://open.spotify.com/embed/album/5EsWVE0PFOiiopCwaEQ43V?utm_source=generator" width="auto" height="auto" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
 	</div>
 	<script>
-			let iframeElement = document.getElementById('iframe');
-			var opacity = 0;
-			var speed = 10;
-			iframeElement.style.opacity = opacity;
-			setTimeout(function(){
-				if(opacity <= 1) {
-					setInterval(function(){
-						opacity+= .01;
-						iframeElement.style.opacity = opacity;
-					},speed);
-				}
-			},2500);
-			
+
 	
 	</script>
 	
+	<link rel="icon" href="img/favicon.ico" />
+	<div class="feof" style="background-color: #000000">
+		<body style background="img/Background.jpg">
+		
+		<footer>
+			<div style="padding: 5px 0 0 5px; height: 370px; width: 60px;position:fixed;left:0;bottom:0">
+				
+				<a href = "https://music.apple.com/us/artist/looma/1628165548" style="text-decoration: none"  target="_blank">
+					<img src="img/apple.png" height="40" alt="Apple" >
+				</a>
+		
+				<a href = "https://soundcloud.com/loomamusic" style="text-decoration: none"  target="_blank">
+					<img src="img/soundcloud.png" height="40" alt="SoundCloud" >
+				</a>
+				
+				<a href = "https://open.spotify.com/artist/1iLnMZyWGzHtak1lqLQjGH?si=8pLAuDShTPix-7YCY9mSEA" style="text-decoration: none"  target="_blank">
+					<img src="img/spotify.png" height="40" alt="Spotify" >
+				</a>
+		
+				<a href = "https://www.youtube.com/c/loomamusic" style="text-decoration: none" target="_blank">
+					<img src="img/youtube.png" height="40" alt="Youtube" >
+				</a>
+		
+				<a href = "https://www.instagram.com/loomamusic/" style="text-decoration: none" target="_blank ">
+					<img src="img/instagram.png" height="40" alt="Instagram" >
+				</a>
+				
+				<a href = "https://www.tiktok.com/@loomamusic" style="text-decoration: none" target="_blank ">
+					<img src="img/tiktok.png" height="40" alt="tiktok" >
+				</a>
+				
+				<a href = "https://discord.com/invite/FnkgaaGgPA" style="text-decoration: none" target="_blank ">
+					<img src="img/discord.png" height="40" alt="tiktok" >
+				</a>
+				
+				<a href = "https://www.patreon.com/loomamusic" style="text-decoration: none" target="_blank ">
+					<img src="img/patreon.png" height="40" alt="tiktok" >
+				</a>
+				
+				
+			  </div>
+		</footer>
+	</body>
+	</div>
 </body>
 
 	
-	
-	</head>
-		<link rel="icon" href="img/favicon.ico" />
-		<div class="feof" style="background-color: #000000">
-			<body style background="img/Background.jpg">
-			
-			<footer>
-				<div style="padding: 5px 0 0 5px; height: 370px; width: 60px;position:fixed;left:0;bottom:0">
-					
-					<a href = "https://music.apple.com/us/artist/looma/1628165548" style="text-decoration: none"  target="_blank">
-						<img src="img/apple.png" height="40" alt="Apple" >
-					</a>
-			
-					<a href = "https://soundcloud.com/loomamusic" style="text-decoration: none"  target="_blank">
-						<img src="img/soundcloud.png" height="40" alt="SoundCloud" >
-					</a>
-
-					
-					<a href = "https://open.spotify.com/artist/1iLnMZyWGzHtak1lqLQjGH?si=8pLAuDShTPix-7YCY9mSEA" style="text-decoration: none"  target="_blank">
-						<img src="img/spotify.png" height="40" alt="Spotify" >
-					</a>
-			
-					<a href = "https://www.youtube.com/c/loomamusic" style="text-decoration: none" target="_blank">
-						<img src="img/youtube.png" height="40" alt="Youtube" >
-					</a>
-			
-					<a href = "https://www.instagram.com/loomamusic/" style="text-decoration: none" target="_blank ">
-						<img src="img/instagram.png" height="40" alt="Instagram" >
-					</a>
-					
-					<a href = "https://www.tiktok.com/@loomamusic" style="text-decoration: none" target="_blank ">
-						<img src="img/tiktok.png" height="40" alt="tiktok" >
-					</a>
-					
-					<a href = "https://discord.com/invite/FnkgaaGgPA" style="text-decoration: none" target="_blank ">
-						<img src="img/discord.png" height="40" alt="tiktok" >
-					</a>
-					
-					<a href = "https://www.patreon.com/loomamusic" style="text-decoration: none" target="_blank ">
-						<img src="img/patreon.png" height="40" alt="tiktok" >
-					</a>
-					
-					
-		 	 	</div>
-			</footer>
-		</body>
-		</div>
+<script>
+		// typingEffect(string,20,500);
+</script>
 </html>
