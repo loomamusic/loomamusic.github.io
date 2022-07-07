@@ -7,15 +7,13 @@
 		html, body {
 			margin:0;
 			padding:0;
-	
 		}
 	</style>
 
 	<link rel="stylesheet" href="style.css">
-	<script src="home.js" defer></script>
-	
-</head>		
-	
+	<script src="src/terminal.js" defer></script>
+	<script src="src/home.js" defer></script>
+</head>
 <body>
 	<title>Looma</title>		
 	<header>
@@ -39,8 +37,10 @@
 	
 
 	<div class="wrapper" style="color: #000000; font-weight: 0; font-family: Courier, monospace; font-size: 100%; position:absolute;  left: 10%; top: auto">
-		
-		<div class="text-lines">
+		<div id="terminal-container">
+
+		</div>
+		<!-- <div class="text-lines">
 			<o>USERNAME == LOOMA</o><br>
 			<o>PASSWORD == ********</o><br>
 			<o>SEARCHING FOR NEW RELEASES</o><br>
@@ -48,23 +48,18 @@
 			<o>.</o><br>
 			<o>.</o><br>
 			<o>.</o><br>
-		</div>
-
-
-
+		</div> -->
+		
 	</div>
 	
 
-	<div id="iframe" style="position: absolute; padding: 180px 0 0 0px; left: 13%;" width="auto" height="auto" >
-			<iframe style="position: relative; border-radius:12px" src="https://open.spotify.com/embed/album/7FX6yWwEt5iEMUzfrBABOu?utm_source=generator" width="auto" height="auto" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-			
-			<iframe style="position: relative; border-radius:12px" src="https://open.spotify.com/embed/album/5EsWVE0PFOiiopCwaEQ43V?utm_source=generator" width="auto" height="auto" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+	<div id="streaming-embeds">
+		<!-- <div id="iframe" style="position: absolute; padding: 180px 0 0 0px; left: 13%;" width="auto" height="auto" > -->
+		<iframe style="position: relative; border-radius:12px" src="https://open.spotify.com/embed/album/7FX6yWwEt5iEMUzfrBABOu?utm_source=generator" width="auto" height="auto" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+		<iframe style="position: relative; border-radius:12px" src="https://open.spotify.com/embed/album/5EsWVE0PFOiiopCwaEQ43V?utm_source=generator" width="auto" height="auto" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+		<!-- </div> -->
 	</div>
-	<script>
 
-	
-	</script>
-	
 	<link rel="icon" href="img/favicon.ico" />
 	<div class="feof" style="background-color: #000000">
 		<body style background="img/Background.jpg">

@@ -18,14 +18,25 @@
 
 
 html, body {
+	margin:0;
+	padding:0;
+}
 
-	
+#terminal-container {
+	padding: 20px;
+}
 
+#terminal-container ul {
+	margin-left: -10px;
+	margin-bottom: 0;
+	margin: 0;
+    padding: 0;  
+}
 
-margin:0;
-
-padding:0;
-
-
-
+#streaming-embeds {
+	position: absolute; 
+	padding: 180px 0 0 0px;
+	left: 13%; 
+	width: auto;
+	height: auto;
 }
